@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Pacifico', cursive; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+h1 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 5rem;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+h2 {
+  grid-area: h2; }
+
+section#p {
+  grid-area: p; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none;
+  overflow: hidden; }
+
+li {
+  display: inline; }
+
+li a {
+  display: inline-block; }
+
+img {
+  max-width: 100%; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+input {
+  margin: 15px 0; }
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+footer {
+  font-size: 150%; }
+
+#carouselExampleControls {
+  width: 360px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  #carouselExampleControls {
+    width: 600px;
+    margin: 0 auto; } }
+
+.bordesRedondos {
+  border-radius: 50%; }
+
+.normal {
+  font-style: normal; }
+
+.italica {
+  font-style: italic; }
+
+.dancing {
+  font-family: 'Dancing Script', cursive; }
+
+.pacifico {
+  font-family: 'Pacifico', cursive; }
+
+.negrita {
+  font-weight: bold; }
+
+.textoGrande {
+  font-size: 20px; }
+
+@media (min-width: 768px) {
+  .textoGrande {
+    font-size: 30px; } }
+
+.normal {
+  font-size: 150%; }
+
+.impact {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+.derecha {
+  text-align: right; }
+
+.centro {
+  text-align: center; }
+
+.todoMayuscula {
+  text-transform: uppercase; }
+
+.primeraMayuscula {
+  text-transform: capitalize; }
+
+.interliniado {
+  line-height: 1.9; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fondoColor {
+  background-image: linear-gradient(to right bottom, #ff58ff, #dc7bff, #bc92ff, #a4a2ff, #98aefb); }
+
+.padre {
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  align-content: space-between; }
+
+.item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.padre-flex {
+  display: flex;
+  flex-direction: column; }
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+
+@media only screen and (min-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 40rem;
+    gap: 30px; } }
+
+.galleryItem {
+  margin: 50px 0; }
+
+.container-botones {
+  display: flex;
+  gap: 30px; }
+
+/* hay calses que no utilizo, las borro no?*/
